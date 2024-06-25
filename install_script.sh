@@ -80,7 +80,7 @@ weston(){
     elif [[ "$wayland" != "wayland" && "$DE" == *"GNOME" ]]; then
         echo  -e "\e[32m[\e[35m+\e[32m] \e[1;36mYour current DE is gnome\e[0m"
         echo  -e "\e[32m[\e[35m+\e[32m] \e[1;36mYou can switch to  wayland from the login screen after reboot\e[0m"
-        read -p $'\e[32m[\e[35m*\e[32m] \e[1;32mDo you wish to continue installing weston service(y/n[yes/no] - default:- n): \e[0m' weston
+        weston="n"
 
         if [[ $weston == "y" || $weston == "Y" ]]; then
             sudo cp weston.service ~/.config/systemd/user &> /dev/null
@@ -253,7 +253,7 @@ gapps_fedora(){
 
 #Function for debian gapps prompt
 gapps_debian(){
-    read -p $'\e[32m[\e[35m*\e[32m] \e[1;32mDo you want gapps installed (y/n/o[yes/no/offline] - default:- n): \e[0m' gapps
+    gapps="n"
 
         if [[ $gapps == "n" || $gapps == "N" ]]; then
             echo -e "\e[32m[\e[35m+\e[32m] \e[1;36msetting up waydroid\e[0m"
@@ -326,7 +326,7 @@ menu(){
     echo "[03] Fedora"
     echo " "
 
-    read -p $'\e[32m[\e[35m+\e[32m] which distro are you running: ' os
+    os=1
     printf "${STOP}"
 
     if [[ $os == 1 || $os == 01 ]];then
