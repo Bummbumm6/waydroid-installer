@@ -366,9 +366,13 @@ menu(){
         sudo sh -c "echo 'deb [signed-by=/usr/share/keyrings/waydroid.gpg] https://repo.waydro.id/ $distro main' > /etc/apt/sources.list.d/waydroid.list"
         
         check 
-        
+
+	sudo systemctl stop packagekit.service --now
+ 
         sudo apt-get -q update
 
+	sudo systemctl start packagekit.service --now
+ 
         check
 
         #install waydroid
