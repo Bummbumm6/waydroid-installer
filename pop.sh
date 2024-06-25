@@ -11,12 +11,8 @@ sudo apt install waydroid -y
 sudo systemctl enable --now waydroid-container
 sudo apt autoremove -y
 sudo waydroid init
-git clone https://github.com/Bummbumm6/waydroid-installer
-cd waydroid-installer
 chmod +x *
 ./requirements.sh
-cd ..
-rm -rf waydroid-installer
 rm -rf anbox-modules
 sudo echo '# START WAYDROID INSTALL SCRIPT' >> /etc/gdm3/custom.conf
 sudo echo 'WaylandEnable=true' >> /etc/gdm3/custom.conf
