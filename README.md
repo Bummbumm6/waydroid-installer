@@ -1,3 +1,5 @@
+I made this for my [Waydroid on Pop!_OS install script](https://gist.github.com/Bummbumm6/f92b085030a33c39d8f0bf5e6317f733) as lxd-client doesn't work for some reason
+
 ![waydroid](https://user-images.githubusercontent.com/65239245/163730035-ca89be56-e56f-4827-a736-0d87d879301e.png)
 
 
