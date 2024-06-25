@@ -14,8 +14,9 @@ sudo waydroid init
 chmod +x *
 ./requirements.sh
 rm -rf anbox-modules
-curl -O https://auroraoss.com/downloads/AuroraStore/Release/AuroraStore-4.5.1.apk
-waydroid app install AuroraStore-4.5.1.apk
+clear
+curl -O https://f-droid.org/F-Droid.apk
+waydroid app install F-Droid.apk
 clear
 echo -e "\033[0;31m   TO LAUNCH WAYDROID, PLEASE SWITCH TO WAYLAND USING THE INSTRUCTIONS"
 echo "   at https://gist.github.com/Bummbumm6/f92b085030a33c39d8f0bf5e6317f733"
