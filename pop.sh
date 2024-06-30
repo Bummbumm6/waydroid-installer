@@ -10,7 +10,7 @@ sudo apt upgrade -y
 sudo apt install waydroid -y
 sudo systemctl enable --now waydroid-container
 sudo apt autoremove -y
-sudo waydroid init
+# sudo waydroid init
 chmod +x *
 ./requirements.sh
 rm -rf anbox-modules
