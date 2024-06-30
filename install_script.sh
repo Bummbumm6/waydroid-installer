@@ -253,7 +253,7 @@ gapps_fedora(){
 
 #Function for debian gapps prompt
 gapps_debian(){
-    gapps="n"
+    gapps="y"
 
         if [[ $gapps == "n" || $gapps == "N" ]]; then
             echo -e "\e[32m[\e[35m+\e[32m] \e[1;36msetting up waydroid\e[0m"
